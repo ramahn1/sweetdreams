@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selamat malam</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f864cc;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            
+        }
+        .card {
+            background-color: #ffffff;
+            width: 350px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            padding: 20px;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px 15px 0 0;
+        }
+        .card h1 {
+            color: #e45eb7;
+            margin: 20px 0 10px;
+            font-size: 24px;
+        }
+        .card p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        .button {
+            background-color: #d53a47;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .button:hover {
+            background-color: #b3303b;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1></h1>
+        <p>
+            sayangkuuu kamu udah bobo yaa? aku disini sambil senyum senyum sendiri mikirin kamuuuu, ya ampun, kamu
+            tu bikin aku kangen tiap detik. malam ini aku cuma mau bilang, makasi udah jadi bagian terindah dalam 
+            hidup aku. makasi udah sabar, udah sayang sama aku, kamu itu rumah ternyaman yang selalu aku cari, tempat
+            paling tenang yang selalu aku rinduin. sekarang, bobo yang nyenyak ya, peluk guling sambil bayangin aku
+            yang lagi peluk kamu erat dari jauh ahaha, jengan begadang lagi, kamu butuh istirahat biar tetap sehat,
+            tetap bahagia, dan tetap jadi kesayanganaku selamanyaaaa. aku doain kamu mimpi indah malam ini. klo bisa
+            kita ketemu di mimpi yaa? kita jalan jalan, ketawa bareng, dan pelukan hangat sampai pagi datang.
+            good night cinta akuu , aku sayang kamuuu
+        </p>
+    </div>
+<audio autoplay loop>
+    <source src="audio/aaa.mp3" type=" audio/mpeg" />
+  </audio>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const audio = document.querySelector("audio");
+      const userInteraction = () => {
+        audio.play();
+        document.removeEventListener("click", userInteraction);
+      };
+      document.addEventListener("click", userInteraction);
+    });
+  </script>
+</body>
+</html> 
